@@ -1,7 +1,61 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-image: url("https://imagetolink.com/ib/berNBMZdHS.jpg");
+            float:left;
+            margin-left: 37%;
+            padding: 25px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form{
+            background-color:transparent;
+            
+            width:100%;
+            
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.7);
+        }
+        label{
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            padding: 8px;
+            border-color: rgb(187, 127, 22);
+            
+            box-sizing: border-box;
+            border-radius: 7px;
+            width: 250px;
+        }
+        button{
+            width: 100px;
+            
+        }
+        button:hover{
+            background-color: rgb(81, 198, 81);
+        }
+    </style>
 </head>
 <body>
-    <h1> yoga survey</h1>
+    <h1 align="center">Survey Form</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="pn-number">Mobile number: </label><br>
+        <input type="tel" id="pn-number" name="pn-number" pattern="[0-9]{10}" maxlength="10" minlength="10" required><br><br>
+        <button style="margin-left: 30%;"><a href="yoga survey form.html">submit</a></button><br>
+        
+        
+    </form>
 </body>
+</html>
